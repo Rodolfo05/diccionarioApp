@@ -1,6 +1,6 @@
 import axios from 'axios'
-const baseURL = process.env.REACT_APP_BASE_URL
-
+//const baseURL = process.env.REACT_APP_BASE_URL
+const baseURL = "http://www.diccionarioprogramacion.somee.com/api";
 
 export async function getDefiniciones(){
         try{
