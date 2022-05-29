@@ -2,7 +2,7 @@
   "name": "diccionario-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rodolfo05.github.io/diccionarioApp",
+  "homepage": "https://rodolfo05.github.io/diccionarioApp/",
   "dependencies": {
     "@popperjs/core": "^2.11.2",
     "@testing-library/jest-dom": "^5.16.2",
