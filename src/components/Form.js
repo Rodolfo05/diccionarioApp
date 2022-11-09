@@ -47,7 +47,7 @@ const Form = ({handleSubmit, estado, dataDef, formAction}) => {
             
         <Label htmlFor="">Definicion</Label>
         <InputGroup>
-            <FormControl 
+            <FormControl className='inputDefinicion'
                 name="definicion"
                 value={valorForm.definicion}
                 onChange={handleChange}

@@ -27,4 +27,12 @@ li {
 
 .center {
     text-align: center;
-    }
+}
+
+.bodyModal{
+    height: 500px;
+}
+
+.inputDefinicion{
+    height: 360px;
+}

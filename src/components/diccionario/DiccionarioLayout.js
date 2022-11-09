@@ -11,6 +11,7 @@ import ButtonNuevaDef from './ButtonNuevaDef';
 import { FaTrash } from "react-icons/fa";
 import Logo from './Logo';
 
+const ModoProductivo = false;
 
 const DiccionarioLayout = () => {
 
@@ -22,20 +23,31 @@ const DiccionarioLayout = () => {
     
 
     async function loadDefiniciones() {
+        
         const respuesta = await getDefiniciones();
 
-        if (respuesta.status === 200) {
-            setDefiniciones(respuesta.data);
+        if(ModoProductivo){
+            if (respuesta.status === 200) {
+                setDefiniciones(respuesta.data);
+            }
+        }else{
+            setDefiniciones(respuesta);
         }
+
         setIsLoading(false);
     }
 
     async function loadDefinicionesPorLetra(letra){
         const respuesta = await getDefinicionPorLetra(letra);
 
-        if(respuesta.status === 200){
-            setDefiniciones(respuesta.data);
+        if(ModoProductivo){
+            if(respuesta.status === 200){
+                setDefiniciones(respuesta.data);
+            }
+        }else{
+            setDefiniciones(respuesta);
         }
+
         setIsLoading(false);
     }
 
@@ -93,7 +105,7 @@ const DiccionarioLayout = () => {
     return (
         <>
 
-        <div  className='container-fluid py-2 divLogo'>
+        <div className='container-fluid py-2 divLogo'>
             <Logo/>
         </div>
 
@@ -127,7 +139,7 @@ const DiccionarioLayout = () => {
                 <Modal.Header closeButton>
                     <Modal.Title>Agregar Concepto</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body className='bodyModal'>
                     <Form formAction="FormNuevaDef" handleSubmit={handleSubmit} />
                 </Modal.Body>
                 <Modal.Footer>
@@ -146,7 +158,7 @@ const DiccionarioLayout = () => {
                 <Modal.Header closeButton>
                     <Modal.Title>Editar Definicion</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body className='bodyModal'>
                     <Form formAction="FormEditDef" handleSubmit={handleSubmitEdit} estado="1" dataDef={def}/>
                 </Modal.Body>
                 <Modal.Footer>
