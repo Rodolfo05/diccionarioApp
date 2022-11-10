@@ -3,7 +3,7 @@ import definicionesJSON from "./definiciones.json"
 //const baseURL = process.env.REACT_APP_BASE_URL
 const baseURL = "http://www.diccionarioprogramacion.somee.com/api";
 
-const ModoProductivo = false;
+const ModoProductivo = true;
 
 export async function getDefiniciones(){
         try{

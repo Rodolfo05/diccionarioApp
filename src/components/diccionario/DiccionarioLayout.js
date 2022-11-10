@@ -11,7 +11,7 @@ import ButtonNuevaDef from './ButtonNuevaDef';
 import { FaTrash } from "react-icons/fa";
 import Logo from './Logo';
 
-const ModoProductivo = false;
+const ModoProductivo = true;
 
 const DiccionarioLayout = () => {
 
