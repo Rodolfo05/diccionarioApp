@@ -19,7 +19,11 @@ const Form = ({handleSubmit, estado, dataDef, formAction}) => {
     const handleChange = (e) => {
         const { name, value } = e.target;
 
-        setValorForm({ ...valorForm, [name]: value });
+        setValorForm({ ...valorForm, [name]: capitalizarPrimeraLetra(value) });
+    }
+
+    function capitalizarPrimeraLetra(cadena) {
+        return cadena.charAt(0).toUpperCase() + cadena.slice(1);
     }
 
 

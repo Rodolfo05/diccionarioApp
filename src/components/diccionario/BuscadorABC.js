@@ -3,7 +3,7 @@ import React from 'react'
 export const BuscadorABC = ({onClick}) => {
 
   const buscarLetra = (letra) => {
-    // console.log("letra: "+letra);
+    //  console.log("letra: "+letra);
     onClick(letra);
   }
 

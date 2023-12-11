@@ -58,6 +58,7 @@ const DiccionarioLayout = () => {
 
     const [show, setShow] = useState(false);
     const [showEdit, setShowEdit] = useState(false);
+    const [showLeerMas, setShowLeerMas] = useState(false)
 
     const handleClose = () => {
         setShow(false);
@@ -73,6 +74,11 @@ const DiccionarioLayout = () => {
         setShowEdit(true);
         setIsModalOpen(true);
     };
+
+    const handleShowLeerMas = () => {
+        showLeerMas(true);
+        setIsModalOpen(true);
+    }
 
     const handleCloseEdit = () => {
         setShowEdit(false);
@@ -130,7 +136,7 @@ const DiccionarioLayout = () => {
 
             {
                 !isLoading && definiciones.length > 0 && (
-                    <ListDefiniciones funcionEdit={handleShowEdit} funcionDelete={handleDelete} definiciones={definiciones} abreModal={handleShowEdit} cargaData={cargaDataModal}/>
+                    <ListDefiniciones funcionEdit={handleShowEdit} funcionDelete={handleDelete} definiciones={definiciones} abreModal={handleShowEdit} cargaData={cargaDataModal} abreLeerMas={handleShowLeerMas}/>
                 )
             }
 

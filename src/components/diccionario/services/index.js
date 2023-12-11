@@ -143,7 +143,7 @@ export async function deleteDefinicion(id){
 
 export async function getDefinicionPorLetra(letra){
     try{
-
+        console.log("m: "+ModoProductivo);
         if(ModoProductivo){
 
             const respuesta = await axios({
@@ -154,8 +154,8 @@ export async function getDefinicionPorLetra(letra){
             return respuesta;
 
         }else{
-           
-            let defsEncontras = definicionesJSON.filter(x => x.palabra.startsWith(letra));
+    
+            let defsEncontras = definicionesJSON.filter(x => x.palabra.toUpperCase().startsWith(letra.toUpperCase()));
 
             let defJSON = JSON.stringify(defsEncontras);
             let defObj = JSON.parse(defJSON);

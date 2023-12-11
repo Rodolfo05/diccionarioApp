@@ -7,6 +7,8 @@ import bootstrap from 'bootstrap';
 
 
 const CardDefinicion = (props) => {
+
+
     return(
         <Card>
         <Card.Body>
@@ -18,7 +20,7 @@ const CardDefinicion = (props) => {
             <div>
                 <div className="row">
                 <div className="col-md-2">
-                        <button className='btn' style={{"background":"#CCD2E8"}}>Leer mas...</button>
+                        <button className='btn' onClick={props.abreLeerMas} style={{"background":"#CCD2E8"}}>Leer mas...</button>
                     </div>
                     <div className='d-flex flex-row-reverse col-md-10 d-flex'>
                         <ButtonEditar onClick={props.funcionEdit} abreModal={props.abreModal} idData={props.idData} palabraData={props.palabra} defData={props.definicion} cargaData={props.cargaData}/>
