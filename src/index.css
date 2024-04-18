@@ -2,6 +2,13 @@
     background: #272c3b;
 }
 
+.navbar{
+    display: flex;
+    justify-content: center;
+    background: #272c3b;
+    padding: 15px;
+}
+
 ul li {
     display: inline;
 }
@@ -23,6 +30,7 @@ li {
     color: rgb(0, 0, 0);
     font-weight: 500;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .center {
@@ -35,4 +43,12 @@ li {
 
 .inputDefinicion{
     height: 360px;
+}
+
+.card{
+    margin: 10px;
+}
+
+.card-body:hover{
+    background: #f2f2f2;
 }

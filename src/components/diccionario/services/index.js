@@ -66,6 +66,7 @@ export async function guardaDefinicion(definicionData){
             return respuesta;
         }else{
             definicionesJSON.push(definicionData);
+            console.log(definicionesJSON);
         }
 
     }catch(e){
@@ -121,6 +122,7 @@ export async function actualizaDefinicion(definicionData){
 }
 
 export async function deleteDefinicion(id){
+
     try{
 
         if(ModoProductivo){
@@ -132,7 +134,7 @@ export async function deleteDefinicion(id){
 
         }else{
             let defDelete = definicionesJSON.findIndex((def) => def.id === id);
-            definicionesJSON.splice(defDelete);
+            definicionesJSON.splice(defDelete,1);
         }
 
         

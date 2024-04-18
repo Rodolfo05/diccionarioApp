@@ -1,1 +1,80 @@
-[{"id":3,"palabra":"React","definicion":"Es una libreria de Javascript diseñada para crear interfaces de usuario. Permite el desarrollo de aplicaciones web, aplicaciones de una sola pagina (SPA) e incluso aplicaciones para móviles."},{"id":4,"palabra":"Javascript","definicion":"Lenguaje de programación utilizado principalmente para crear páginas web dinamicas.\nEs un lenguaje interpretado, por lo que no es necesario compilar los programas para ejecutarlos, se pueden probar directamente en cualquier navegador."},{"id":5,"palabra":"Angular","definicion":"Es un framework de Javascript cuya finalidad es facilitar el desarrollo de aplicaciones web SPA. \nEvita escribir codigo repetitivo y lo mantiene ordenado gracias a su patron MVC asegurando los desarrollos con rapidez, a la vez que posibilita modificaciones y actualizaciones."},{"id":6,"palabra":"SQL","definicion":"Es un lenguaje de computación para trabajar con conjuntos de datos y las relaciones entre ellos."},{"id":7,"palabra":"Java","definicion":"Lenguaje de programación utilizado para codificar aplicaciones web.\nJava es un lenguaje multiplataforma, orientado a objetos y centrado en la red. \nEs un lenguaje de programación rápido, seguro y fiable para codificar desde aplicaciones móviles, software empresarial hasta aplicaciones de macrodatos y tecnologías del lado del servidor."},{"id":8,"palabra":"Framework","definicion":"Consiste en una estructura base utilizada como punto de partida para elaborar un proyecto con objetivos específicos.\nEs una especie de plantilla o esquema conceptual, que simplifica la elaboración de una tarea, ya que solo es necesario complementarlo de acuerdo a lo que se quiere realizar."},{"id":9,"palabra":"Git","definicion":"Git es un sistema de control de versiones.\nA diferencia de antiguos sistemas de control de versiones, en Git cada desarrollador tiene un historial completo de su repositorio de código de manera local.\nGit incluye funcionalidades de crear ramas (branch), fusiones y  reescribir historiales de repositorios."},{"id":10,"palabra":"Repositorio Git","definicion":"Es un almacenamiento virtual de tu proyecto. Te permite guardar versiones del código a las que puedes acceder cuando lo necesites."},{"id":11,"palabra":"PHP","definicion":"Es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web.\nEsta enfocado principalmente a la programación de scripts del lado del servidor.\nEl código PHP suele ser procesado en un servidor web por un interprete PHP implementado como un modulo, un Daemon o como un ejecutable de interfaz de entrada común (CGI)."},{"id":12,"palabra":"Data Mining","definicion":"La minería de datos es un campo de la estadística y las ciencias de la computación referido al proceso que intenta descubrir patrones en grandes volúmenes de conjuntos de datos.\nUtiliza los métodos de la inteligencia artificial, aprendizaje automático, estadística y sistema de bases de datos."},{"id":13,"palabra":"PL\/SQL","definicion":"Es un lenguaje de programación incrustado en Oracle. Soporta todas las consultas ya que utiliza la misma manipulación de datos que en SQL, incluyendo nuevas características como: manejo de variables, estructuras modulares, estructuras de control de flujo y toma de decisiones."},{"id":14,"palabra":"Maven","definicion":"Es una herramienta utilizada para la gestión, construcción y compilación de proyectos usualmente programados en Java."},{"id":15,"palabra":"Node.js","definicion":"Es un entorno de tiempo de ejecución de JavaScript. Este entorno de tiempo de ejecución en tiempo real incluye todo lo que se necesita para ejecutar un programa escrito en Javascript."}]
+[
+    {
+        "id": 3,
+        "palabra": "React",
+        "definicion": "Es una libreria de Javascript diseñada para crear interfaces de usuario. Permite el desarrollo de aplicaciones web, aplicaciones de una sola pagina (SPA) e incluso aplicaciones para móviles.",
+        "definicionExt": "Es una libreria de Javascript desarrollada por Facebook. Se utiliza para construir y diseñar interfaces de usuario (UI). Permite el desarrollo de aplicaciones web, aplicaciones de una sola pagina (SPA) e incluso aplicaciones para móviles."
+    },
+    {
+        "id": 4,
+        "palabra": "Javascript",
+        "definicion": "Lenguaje de programación utilizado principalmente para crear páginas web dinamicas.\nEs un lenguaje interpretado, por lo que no es necesario compilar los programas para ejecutarlos, se pueden probar directamente en cualquier navegador.",
+        "definicionExt": "JavaScript es un lenguaje de programación de alto nivel, interpretado y orientado a objetos que se utiliza principalmente en el desarrollo web para crear contenido dinámico e interactivo en las páginas web. Fue creado originalmente por Netscape bajo el nombre de 'LiveScript' y luego fue renombrado a JavaScript cuando se lanzó junto con Netscape Navigator 2.0 en 1995."
+    },
+    {
+        "id": 5,
+        "palabra": "Angular",
+        "definicion": "Es un framework de Javascript cuya finalidad es facilitar el desarrollo de aplicaciones web SPA. \nEvita escribir codigo repetitivo y lo mantiene ordenado gracias a su patron MVC asegurando los desarrollos con rapidez, a la vez que posibilita modificaciones y actualizaciones.",
+        "definicionExt": "Es un popular framework de desarrollo de aplicaciones web y móviles de código abierto desarrollado por Google y una comunidad de desarrolladores. Se utiliza para crear aplicaciones web de una sola página (Single Page Applications - SPAs) y aplicaciones móviles híbridas utilizando tecnologías web estándar como HTML, CSS y JavaScript (o TypeScript, una superset de JavaScript)."
+    },
+    {
+        "id": 6,
+        "palabra": "SQL",
+        "definicion": "Es un lenguaje de computación para trabajar con conjuntos de datos y las relaciones entre ellos.",
+        "definicionExt": "SQL (Structured Query Language) es un lenguaje de programación estándar utilizado para administrar y manipular bases de datos relacionales. Fue desarrollado por IBM en la década de 1970 y se ha convertido en el lenguaje estándar para la gestión de datos en sistemas de bases de datos relacionales."
+    },
+    {
+        "id": 7,
+        "palabra": "Java",
+        "definicion": "Lenguaje de programación utilizado para codificar aplicaciones web.\nJava es un lenguaje multiplataforma, orientado a objetos y centrado en la red. \nEs un lenguaje de programación rápido, seguro y fiable para codificar desde aplicaciones móviles, software empresarial hasta aplicaciones de macrodatos y tecnologías del lado del servidor.",
+        "definicionExt": "Java es un lenguaje de programación de propósito general, orientado a objetos, diseñado originalmente por Sun Microsystems (adquirida posteriormente por Oracle Corporation) y lanzado en 1995. Desde entonces, Java se ha convertido en uno de los lenguajes de programación más populares y ampliamente utilizados en el mundo del desarrollo de software."
+    },
+    {
+        "id": 8,
+        "palabra": "Framework",
+        "definicion": "Consiste en una estructura base utilizada como punto de partida para elaborar un proyecto con objetivos específicos.\nEs una especie de plantilla o esquema conceptual, que simplifica la elaboración de una tarea, ya que solo es necesario complementarlo de acuerdo a lo que se quiere realizar.",
+        "definicionExt": "En programación, un framework es una estructura o conjunto de herramientas predefinidas y abstracciones de software que proporcionan una base para el desarrollo de aplicaciones. Los frameworks están diseñados para facilitar y agilizar el proceso de desarrollo al proporcionar una estructura organizativa, un conjunto de funcionalidades comunes, y patrones de diseño que se pueden reutilizar en diferentes proyectos."
+    },
+    {
+        "id": 9,
+        "palabra": "Git",
+        "definicion": "Git es un sistema de control de versiones.\nA diferencia de antiguos sistemas de control de versiones, en Git cada desarrollador tiene un historial completo de su repositorio de código de manera local.\nGit incluye funcionalidades de crear ramas (branch), fusiones y  reescribir historiales de repositorios.",
+        "definicionExt": "Git es un sistema de control de versiones distribuido de código abierto diseñado para rastrear cambios en archivos y coordinar el trabajo en proyectos de desarrollo de software. Fue creado por Linus Torvalds en 2005, y desde entonces se ha convertido en una de las herramientas más populares para el control de versiones en la industria del desarrollo de software."
+    },
+    {
+        "id": 10,
+        "palabra": "Repositorio Git",
+        "definicion": "Es un almacenamiento virtual de tu proyecto. Te permite guardar versiones del código a las que puedes acceder cuando lo necesites.",
+        "definicionExt": "Un repositorio Git es un espacio donde se almacenan y gestionan los archivos de un proyecto utilizando el sistema de control de versiones Git. En términos simples, es una carpeta especial que contiene todos los archivos de tu proyecto, así como la información necesaria para realizar un seguimiento de los cambios en esos archivos a lo largo del tiempo."
+    },
+    {
+        "id": 11,
+        "palabra": "PHP",
+        "definicion": "Es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web.\nEsta enfocado principalmente a la programación de scripts del lado del servidor.\nEl código PHP suele ser procesado en un servidor web por un interprete PHP implementado como un modulo, un Daemon o como un ejecutable de interfaz de entrada común (CGI).",
+        "definicionExt": "PHP es un lenguaje de programación de código abierto ampliamente utilizado para el desarrollo de aplicaciones web dinámicas. Su nombre es un acrónimo recursivo que significa 'PHP: Hypertext Preprocessor'. Fue creado originalmente por Rasmus Lerdorf en 1994 y desde entonces ha evolucionado para convertirse en uno de los lenguajes más populares en el desarrollo web."
+    },
+    {
+        "id": 12,
+        "palabra": "Data Mining",
+        "definicion": "La minería de datos es un campo de la estadística y las ciencias de la computación referido al proceso que intenta descubrir patrones en grandes volúmenes de conjuntos de datos.\nUtiliza los métodos de la inteligencia artificial, aprendizaje automático, estadística y sistema de bases de datos.",
+        "definicionExt": "También conocido como minería de datos, es el proceso de descubrir patrones, tendencias, correlaciones y conocimientos útiles o significativos a partir de conjuntos de datos grandes y complejos. Implica utilizar técnicas avanzadas de análisis de datos, estadísticas, aprendizaje automático y visualización de datos para explorar, analizar y modelar grandes cantidades de datos con el objetivo de extraer información valiosa que pueda ser utilizada para tomar decisiones informadas y estratégicas."
+    },
+    {
+        "id": 13,
+        "palabra": "PL\/SQL",
+        "definicion": "Es un lenguaje de programación incrustado en Oracle. Soporta todas las consultas ya que utiliza la misma manipulación de datos que en SQL, incluyendo nuevas características como: manejo de variables, estructuras modulares, estructuras de control de flujo y toma de decisiones.",
+        "definicionExt": "PL/SQL significa 'Procedural Language/Structured Query Language', es un lenguaje de programación procedural desarrollado por Oracle Corporation específicamente para interactuar con su base de datos relacional Oracle Database.\nPL/SQL combina las características de un lenguaje de programación procedural, como variables, estructuras de control (if-else, bucles, etc.), procedimientos y funciones, con la capacidad de ejecutar consultas SQL para interactuar con la base de datos. Esto permite a los desarrolladores escribir código para manipular datos en la base de datos, así como implementar lógica empresarial compleja dentro de la propia base de datos."
+    },
+    {
+        "id": 14,
+        "palabra": "Maven",
+        "definicion": "Es una herramienta utilizada para la gestión, construcción y compilación de proyectos usualmente programados en Java.",
+        "definicionExt": "Es una herramienta de gestión de proyectos y construcción de software ampliamente utilizada en el ecosistema de Java. Fue desarrollada por la Apache Software Foundation y está escrita en Java. Maven simplifica y automatiza el proceso de compilación, empaquetado y gestión de dependencias de proyectos Java."
+    },
+    {
+        "id": 15,
+        "palabra": "Node.js",
+        "definicion": "Es un entorno de tiempo de ejecución de JavaScript. Este entorno de tiempo de ejecución en tiempo real incluye todo lo que se necesita para ejecutar un programa escrito en Javascript.",
+        "definicionExt": "Es un entorno de ejecución de JavaScript basado en el motor de JavaScript V8 de Chrome. Se utiliza para ejecutar código JavaScript del lado del servidor, lo que permite a los desarrolladores crear aplicaciones web altamente escalables y de alto rendimiento. A diferencia del JavaScript en el navegador, que se ejecuta en el contexto del navegador web, Node.js permite a JavaScript ejecutarse en el servidor, lo que abre muchas posibilidades nuevas para el desarrollo de aplicaciones web y de red."
+    }
+]

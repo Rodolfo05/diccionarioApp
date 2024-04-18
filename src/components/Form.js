@@ -8,6 +8,7 @@ const { Label, Control, Text } = BootstrapForm
 const Form = ({handleSubmit, estado, dataDef, formAction}) => {
 
     const [valorForm, setValorForm] = useState(dataDef ? dataDef : {
+        id: 999,
         palabra: '',
         definicion: ''
     })
