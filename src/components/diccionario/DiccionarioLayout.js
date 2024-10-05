@@ -5,11 +5,12 @@ import ListDefiniciones from './ListDefiniciones';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal, Button } from 'react-bootstrap';
 import Form from '../Form';
-import { guardaDefinicion, getDefiniciones, actualizaDefinicion, deleteDefinicion, getDefinicionPorLetra} from './services';
+import { guardaDefinicion, getDefiniciones, actualizaDefinicion, deleteDefinicion, getDefinicionPorLetra, getDefinicionesPorPalabra} from './services';
 import Loading from './Loading'
 import ButtonNuevaDef from './ButtonNuevaDef';
 import { FaTrash } from "react-icons/fa";
-import Logo from './Logo';
+
+import Navbar from '../Navbar';
 
 const ModoProductivo = false;
 
@@ -50,6 +51,25 @@ const DiccionarioLayout = () => {
 
         setIsLoading(false);
     }
+
+    async function loadDefinicionesPorPalabra(){
+
+        const palabra = document.getElementById("input-search").value;
+
+        const respuesta = await getDefinicionesPorPalabra(palabra);
+
+        if(ModoProductivo){
+            if(respuesta.status === 200){
+                setDefiniciones(respuesta.data);
+            }
+        }else{
+            setDefiniciones(respuesta);
+        }
+
+        setIsLoading(false);
+
+    }
+
 
     useEffect(() => {
         loadDefiniciones();
@@ -111,26 +131,20 @@ const DiccionarioLayout = () => {
     return (
         <>
 
-        <div className='container-fluid py-2 divLogo'>
-            <Logo/>
-        </div>
+        <Navbar nuevaEntrada={handleShow} buscadorPorPalabra={loadDefinicionesPorPalabra}/>
 
-        <div className='container'>
-            <br/>
-            <BuscadorABC onClick={(e) => loadDefinicionesPorLetra(e)} />
-            <br/>
-
-            <ButtonNuevaDef onClick={handleShow}/>
+        <BuscadorABC onClick={(e) => loadDefinicionesPorLetra(e)} />
+  
+        <div className='container px-5 py-2'>
 
             <br/>
             {
-                //si isLaoding es true, ejecutara <Loading/></Loading>
                 isLoading && <Loading />
             }
 
             {
                 !isLoading && !definiciones.length && (
-                    <h2>No hay definiciones registradas.</h2>
+                    <h4 className='text-center'>No hay definiciones registradas.</h4>
                 )
             }
 
@@ -143,7 +157,7 @@ const DiccionarioLayout = () => {
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Agregar Concepto</Modal.Title>
+                    <Modal.Title>Agregar Entrada</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className='bodyModal'>
                     <Form formAction="FormNuevaDef" handleSubmit={handleSubmit} />
@@ -160,7 +174,7 @@ const DiccionarioLayout = () => {
             </Modal>
 
 
-            <Modal show={showEdit} >
+            <Modal show={showEdit} onHide={handleCloseEdit}>
                 <Modal.Header closeButton>
                     <Modal.Title>Editar Definicion</Modal.Title>
                 </Modal.Header>

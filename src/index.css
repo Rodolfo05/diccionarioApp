@@ -1,29 +1,12 @@
-.divLogo {
+body{
+    background-color: #e9e9e9;
+    font-family: 'roboto';
+}
+
+.navbar{
     background: #272c3b;
 }
 
-ul li {
-    display: inline;
-}
-
-li {
-    list-style: none;
-  
-    padding-left:3px;
-    padding-right:3px;
-}
-
-.searchLetter {
-    color: rgb(57, 57, 57);
-    margin: 3px;
-    font-size: 50px;
-}
-
-.searchLetter:hover{
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    cursor: pointer;
-}
 
 .center {
     text-align: center;
@@ -36,3 +19,59 @@ li {
 .inputDefinicion{
     height: 360px;
 }
+
+.abecedario{
+    background-color: #262727;
+}
+
+.abecedario ul li{
+    display: inline;
+    list-style: none;
+}
+
+
+.searchLetter {
+    color: rgb(224, 224, 224);
+    margin: 3px;
+    font-size: 32px;
+}
+
+.searchLetter:hover{
+    color: #4573f2;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4573f2; /* Color de fondo azul */
+    color: #fff; /* Color del texto oscuro */
+    border: 2px solid #272c3b; /* Borde oscuro */
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffffff; /* Fondo blanco en hover */
+    color: #4573f2; /* Texto azul en hover */
+    border-color: #272c3b; /* Borde oscuro en hover */
+  }
+  
+  button:active {
+    background-color: #1f2432; /* Color más oscuro al hacer clic */
+    border-color: #1f2432;
+  }
+
+
+/* ul li {
+    display: inline;
+}
+
+li {
+    list-style: none;
+  
+    padding-left:3px;
+    padding-right:3px;
+} */
