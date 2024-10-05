@@ -86,11 +86,13 @@ const DiccionarioLayout = () => {
     };
 
     const handleShow = () => {
+        document.getElementById("input-search").value = "";
         setShow(true);
         setIsModalOpen(true);
     };
 
     const handleShowEdit = () => {
+        document.getElementById("input-search").value = "";
         setShowEdit(true);
         setIsModalOpen(true);
     };
@@ -119,6 +121,7 @@ const DiccionarioLayout = () => {
     }
 
     const handleDelete = async (id) => {
+        document.getElementById("input-search").value = "";
         await deleteDefinicion(id);
         loadDefiniciones();
     }

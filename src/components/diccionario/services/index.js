@@ -131,8 +131,10 @@ export async function deleteDefinicion(id) {
             return respuesta;
 
         } else {
+            //console.log(JSON.stringify(definicionesJSON))
             let defDelete = definicionesJSON.findIndex((def) => def.id === id);
-            definicionesJSON.splice(defDelete);
+            console.log(defDelete)
+            definicionesJSON.splice(defDelete,1);
         }
 
 

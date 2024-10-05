@@ -3,6 +3,7 @@ import React from 'react'
 export const BuscadorABC = ({ onClick }) => {
 
   const buscarLetra = (letra) => {
+    document.getElementById("input-search").value = "";
     onClick(letra);
   }
 

@@ -22,7 +22,7 @@ const Navbar = ({ nuevaEntrada, buscadorPorPalabra }) => {
 
 
 
-                        <ul className="navbar-nav ms-auto">
+                        <ul className="navbar-nav ms-auto me-5">
                             <li className="nav-item">
                                 <button className="button" id='btn-nueva-entrada' onClick={nuevaEntrada}>Nueva entrada</button>
                             </li>
